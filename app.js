@@ -58,29 +58,32 @@ while (true) {
     let text = await get_message_text(update);
     switch (text.toLowerCase()) {
       case "/start":
-        await send_message(get_chat_id(update), "Welcome to Blackrose bot!");
+        await send_message(get_chat_id(update), "Welcome to Telegram bot!");
         break;
       case "hi":
       case "hello":
         await send_message(get_chat_id(update), "Hello User");
         break;
       case "good morning":
-      case "good morning thendiii":
+      case "good morning":
         await send_message(get_chat_id(update), "Good Morning :)");
         break;
       case "good night":
-      case "good night thendiii":
+      case "good night":
         await send_message(get_chat_id(update), "Good night :)");
         break;
-      case "mmmaaaa":
-      case "mmmaaa":
-      case "mmmaa":
-      case "mmmaaaaa":
+      case "hihi":
+      case "huhu":
+      case "haha":
+      case "hihi":
       case /\[m+][a+]/:
         await send_message(get_chat_id(update), "Mmaaaa");
         break;
-      case "i love you":
-        await send_message(get_chat_id(update), "I Love you too");
+      case "sughalle mone":
+        await send_message(get_chat_id(update), "pinnalla rand vattam");
+        break;
+      case "kurach kanji edukkate":
+        await send_message(get_chat_id(update),"prabhaakaraa...");
         break;
       default:
         await send_message(get_chat_id(update), "Sorry, I didn't Understand");
